@@ -3,6 +3,7 @@ let profile_name, proflie_img, profile_avatar, intro_main, intro_sub;
 window.onload = function(){
   init();
   SetProfile();
+  Blog_Write_Post();
 }
 
 function SetProfile(){
@@ -22,7 +23,7 @@ function init(){
 function Blog_Write_Post(){
   var Blog_Post_Info = document.getElementById('blog');
   var Dummy_Text = `
-  div class="column-xs-12 column-sm-6 portfolio-item">
+  <div class="column-xs-12 column-sm-6 portfolio-item">
   <a href="#">
     <figure>
       <img src="aa">
