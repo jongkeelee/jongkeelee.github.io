@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Jongkee Lee</title>
     <script src="./script/script.js"></script>
     <link rel='stylesheet' href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
- 
-    
-
         ul {
             list-style-type: none;
             margin: 10px;
             padding: 20px;
             overflow: hidden;
-            background-color: hidden; 
+            background-color: hidden;
             position: fixed;
             top: 0;
             width: 95%;
@@ -27,6 +21,7 @@
 
         li {
             float: left;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         li a {
@@ -38,26 +33,28 @@
         }
 
         li a:hover:not(.active) {
-            background-color: rgb(184, 173, 255);
+            background-color: rgba(91, 110, 132, 0.435);
         }
 
-        .f1 {
+        f1 { 
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .active {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:120%;
+        .active, .btn:hover{
+            
+            text-decoration: underline;
         }
-       
+
     </style>
 
 
-<video autoplay muted loop id="myVideo">
-    <source src="./main_video.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source src="./main_video.mp4" type="video/mp4">
+    </video>
 
-<div class="overlay"></div>
+    <div class="overlay"></div>
+
+    
 
 </head>
 
@@ -66,29 +63,21 @@
     <ul>
         <!-- <li><a class="active" href="#home">Jongkee Lee</a></li> -->
         
+        <div id="myDIV">
+            <li style="float:left"><a class="f1" href="./index.html">Jongkee Lee | 이종기</a></li>
+            <li style="float:right"><a class="f1" href="https://www.linkedin.com/in/jongkee-lee-85845765"><img src="linkedin.png" style=width:20px;height:20px></a></li>
+            <li style="float:right"><a class="f1" href="https://www.instagram.com/jongkee.lee/"><img src="instagram.png" style=width:20px;height:20px></a></li>
+            <li style="float:right"><a class="f1" href="#patent">PATENT</a></li>
+            <li style="float:right"><a class="f1" href="#award">AWARD</a></li>
+            <li style="float:right"><a class="f1" href="#design">DESIGN</a></li>
+            <li style="float:right"><a class="f1" href="#family">FAMILY</a></li>
+            <li style="float:right"><a class="f1" href="./about.html">ABOUT</a></li>
+        </div>
+     
 
-        <li style="float:left"><a class="active" href="#home">Jongkee Lee | 이종기</a></li>
+        
 
-        <li style="float:right"><a class="f1" href="https://www.linkedin.com/in/jongkee-lee-85845765">LinkedIn</a></li>
-        <li style="float:right"><a class="f1" href="https://www.instagram.com/jongkee.lee/">Instagram</a></li>
-        <li style="float:right"><a class="f1" href="#patent">PATENT</a></li>
-        <li style="float:right"><a class="f1" href="#award">AWARD</a></li>
-        <li style="float:right"><a class="f1" href="#design">DESIGN</a></li>
-        <li style="float:right"><a class="f1" href="#family">FAMILY</a></li>
-        <li style="float:right"><a class="f1" href="#about">ABOUT</a></li>
-
-    
     </ul>
-
-
-
-
+    <div data-inculude-path="overlay.html"></div>
 </body>
-
-<body>
-  <div data-inculude-path="overlay.html"></div>
-
-</body>
-
-
 </html>
