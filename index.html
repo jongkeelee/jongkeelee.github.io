@@ -6,47 +6,11 @@
     <title>Jongkee Lee</title>
     <script src="./script/script.js"></script>
     <link rel='stylesheet' href="css/style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 10px;
-            padding: 20px;
-            overflow: hidden;
-            background-color: hidden;
-            position: fixed;
-            top: 0;
-            width: 95%;
-        }
+</head>
 
-        li {
-            float: left;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        li a {
-            display: block;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: rgba(91, 110, 132, 0.435);
-        }
-
-        f1 { 
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .active, .btn:hover{
-            
-            text-decoration: underline;
-        }
-
-    </style>
-
+<body>
 
     <video autoplay muted loop id="myVideo">
         <source src="./main_video.mp4" type="video/mp4">
@@ -54,30 +18,23 @@
 
     <div class="overlay"></div>
 
+
+     
+    <ul>
+        <li style="float:left"><a href="./index.html">Jongkee Lee | 이종기</a></li>
+        <li style="float:right"><a href="https://www.linkedin.com/in/jongkee-lee-85845765"><i class="fa-brands fa-linkedin fa-xl"> </i></a></li>
+        <li style="float:right"><a href="https://www.instagram.com/jongkee.lee/"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+        
+        <li style="float:right"><a href="./patent.html">PATENT</a></li>
+        <li style="float:right"><a href="./award.html">AWARD</a></li>
+        <li style="float:right"><a href="./design.html">DESIGN</a></li>
+        <li style="float:right"><a href="./family.html">FAMILY</a></li>
+        <li style="float:right"><a href="./about.html">ABOUT</a></li>
+    </ul>
     
 
-</head>
 
-<body>
 
-    <ul>
-        <!-- <li><a class="active" href="#home">Jongkee Lee</a></li> -->
-        
-        <div id="myDIV">
-            <li style="float:left"><a class="f1" href="./index.html">Jongkee Lee | 이종기</a></li>
-            <li style="float:right"><a class="f1" href="https://www.linkedin.com/in/jongkee-lee-85845765"><img src="linkedin.png" style=width:20px;height:20px></a></li>
-            <li style="float:right"><a class="f1" href="https://www.instagram.com/jongkee.lee/"><img src="instagram.png" style=width:20px;height:20px></a></li>
-            <li style="float:right"><a class="f1" href="#patent">PATENT</a></li>
-            <li style="float:right"><a class="f1" href="#award">AWARD</a></li>
-            <li style="float:right"><a class="f1" href="#design">DESIGN</a></li>
-            <li style="float:right"><a class="f1" href="#family">FAMILY</a></li>
-            <li style="float:right"><a class="f1" href="./about.html">ABOUT</a></li>
-        </div>
-     
-
-        
-
-    </ul>
-    <div data-inculude-path="overlay.html"></div>
 </body>
+
 </html>
